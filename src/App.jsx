@@ -1,5 +1,6 @@
 import { useState, useCallback } from 'react'
 import translations from './translations'
+import logoBlack from './artome_logo_black.png'
 
 // ── Configuration ──────────────────────────────────────────────
 // Replace with your Power Automate HTTP trigger URL
@@ -183,7 +184,7 @@ export default function App() {
       <div className="app">
         <header className="app-header">
           <div className="header-inner">
-            <img src="/artome_logo_black.png" alt="Artome" className="logo" />
+            <img src={logoBlack} alt="Artome" className="logo" />
             <button className="lang-toggle" onClick={toggleLang} type="button">{t.langToggle}</button>
           </div>
         </header>
@@ -200,7 +201,7 @@ export default function App() {
 
       <header className="app-header">
         <div className="header-inner">
-          <img src="/artome_logo_black.png" alt="Artome" className="logo" />
+          <img src={logoBlack} alt="Artome" className="logo" />
           <button className="lang-toggle" onClick={toggleLang} type="button">{t.langToggle}</button>
         </div>
       </header>
